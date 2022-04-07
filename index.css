@@ -1,0 +1,140 @@
+.main-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.google-maps {
+  display: none;
+}
+
+#list-area {
+  overflow: auto;
+  width: 50vw;
+  height: 95vh;
+}
+#definition {
+  overflow: auto;
+  width: 50vw;
+  height: 95vh;
+  margin: 1rem;
+}
+
+#test-area {
+  width: 100%;
+  padding: 1rem;
+}
+
+dl {
+  margin-left: 1rem;
+  margin-top: 0px;
+}
+
+dl.person dfn:before {
+  content: "🧍🏻‍♂️ ";
+  font-style: normal;
+  font-size: 0.9em;
+}
+dl.place dfn:before {
+  content: "🌍 ";
+  font-style: normal;
+  font-size: 0.9em;
+}
+dl.thing dfn:before {
+  content: "📦 ";
+  font-style: normal;
+  font-size: 0.9em;
+}
+
+details {
+  margin-left: 2rem;
+}
+details > summary {
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 1px gray;
+  color: red !important;
+}
+
+h1 {
+  border-top: solid 2px gray;
+  margin-bottom: 0px;
+  font-size: 1.5rem;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+h1 a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+dt {
+  display: inline-block;
+  color: red;
+  margin-right: 2rem;
+  margin-top: 1rem;
+}
+
+sup {
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  border: solid 1 px;
+  display: inline-block;
+  /* background-color: black; */
+  padding: 2px;
+  color: purple;
+  font-size: 1rem;
+}
+
+dd {
+  margin: 0;
+}
+
+dt dfn {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: purple;
+}
+
+dd.info {
+  margin-left: 3rem;
+  color: gray;
+  font-size: 0.8rem;
+}
+
+span.id {
+  font-family: "Courier New", Courier, monospace;
+  display: inline-block;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  padding: 0.1rem;
+  margin: 0.3rem;
+}
+
+span.id::before {
+  content: "id: ";
+  font-weight: bold;
+  color: gray;
+}
+
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+
+.hide-button {
+  position: fixed;
+  float: left;
+  bottom: 10px;
+  right: 10px;
+  border: solid 2px gray;
+  background-color: azure;
+  font-size: 1.5rem;
+}
+
+.hidden {
+  display: none;
+}
